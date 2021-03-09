@@ -40,7 +40,54 @@ header h1 {
     margin-left: 20px;
 }
 
-.card img {
+.About_me {
+    width: 100%;
+    background-color: #092409;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+section.About_me p {
+    color: white;
+    margin: 0px 15px;
+}
+
+section.About_me h2 {
+    color: #ae1ad369;
+}
+
+section.About_me img {
+    width: 40%;
+    max-width: 300px;
+    min-width: 150px;
+}
+
+/*
+@media screen and (max-width: 500px) {
+    section.About_me img {
+        width: 30%;
+        max-width: 300px;
+        min-width: 150px;
+    }  
+}
+*/
+
+.flex-item {
+    display:flex;
+    align-items: start;
+}
+.flex-item img{
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card img {
     width: 100%;
     max-width: 500px;
     min-width: 250px;
