@@ -44,7 +44,7 @@ header nav {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 header li {
@@ -74,6 +74,7 @@ header h1 {
 
 .About_me {
     width: 100%;
+    margin-left: 17px;
     background-color: var(--light);
     margin-bottom: 20px;
     padding: 20px;
@@ -82,6 +83,7 @@ header h1 {
 section.About_me p {
     color: #000000;
     margin: 0px 15px;
+    font-size: 1.3em;
 }
 
 section.About_me img {
@@ -90,15 +92,24 @@ section.About_me img {
     min-width: 150px;
 }
 
-/*
-@media screen and (max-width: 500px) {
-    section.About_me img {
-        width: 30%;
-        max-width: 300px;
-        min-width: 150px;
+@media screen and (max-width: 1200px) {
+    section.About_me p {
+        font-size: 1.2em;
     }  
 }
-*/
+
+@media screen and (max-width: 992px) {
+    section.About_me p {
+        font-size: 1.1em;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    section.About_me p {
+        font-size: 1em;
+    }  
+}
+
 
 .flex-item {
     display:flex;
@@ -113,22 +124,28 @@ section.About_me img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 17px;
   }
 
   .card img {
     width: 100%;
     max-width: 500px;
-    min-width: 270px;
+    min-width: 250px;
 }
 
 .card {
-    flex: 1 0 0;
+    flex: 1 0 250px;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    border-color: #2419c0;
     background-color: var(--light);
   }
+
+#snippets {
+    flex: 2 0 500px;
+}
 
 #snippets img {
     width: 100%;
@@ -140,6 +157,11 @@ section.About_me img {
     background-color: var(--light);
     width: 100%;
     margin-bottom: 15px;
+    margin-left: 17px;
+}
+
+.contact p {
+    margin-left: 10px;
 }
 
   footer {
