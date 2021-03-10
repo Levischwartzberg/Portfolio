@@ -2,7 +2,7 @@
 
 ## Portfolio Site
 
-This is the initial draft of my developer portfolio. I have included two of the UMN coding bootcamp assignments, as well as a couple of more well developed projects that I completed prior to this course. There is an "about me" section that gives a brief summary of my background, a work section that provided images that link to previously written applications, and a brief contact section..
+This is the initial draft of my developer portfolio. I have included two of the UMN coding bootcamp assignments, as well as a couple of more well developed projects that I completed prior to this course. There is an "about me" section that gives a brief summary of my background, a work section that provided images that link to previously written applications, and a brief contact section.
 
 ## Link
 https://levischwartzberg.github.io/Portfolio/
