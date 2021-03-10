@@ -1,5 +1,21 @@
+:root {
+    --header: linear-gradient(#0d048f, #a0acd6);
+    --background:  #acc4d4;
+    --light: #a8b4ec;
+  }
+
 body {
-    background-color: tan;
+    background-color: var(--background);
+    
+    /* scroll padding accounts for the fixed position header when jumping to on-page links */
+    scroll-padding-top: var(--top-spacing);
+  
+    margin: var(--top-spacing) auto;
+}
+
+html {
+    /* The scroll padding works in most browsers, but notably not in Safari or internet explorer, resulting in less than ideal UX in those browsers.*/
+    scroll-padding-top: 200px;
 }
 
 main {
@@ -10,7 +26,7 @@ main {
   }
 
 header {
-    background-color: blue;
+    background-image: var(--header);
     position: fixed;
     width: 100%;
     top: 0px;
@@ -23,8 +39,12 @@ header ul {
 }
 
 header nav {
-    background-color: darkgreen;
+    background-image: linear-gradient(#7d8183, #4b4b50);
     padding: 10px 0;
+}
+
+a {
+    color: white;
 }
 
 header li {
@@ -40,20 +60,28 @@ header h1 {
     margin-left: 20px;
 }
 
+.section_head {
+    margin-left: 15px;
+    margin-bottom: -2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--background);
+    background-image: var(--header);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
 .About_me {
     width: 100%;
-    background-color: #092409;
+    background-color: var(--light);
     margin-bottom: 20px;
     padding: 20px;
 }
 
 section.About_me p {
-    color: white;
+    color: #000000;
     margin: 0px 15px;
-}
-
-section.About_me h2 {
-    color: #ae1ad369;
 }
 
 section.About_me img {
@@ -90,7 +118,7 @@ section.About_me img {
   .card img {
     width: 100%;
     max-width: 500px;
-    min-width: 250px;
+    min-width: 270px;
 }
 
 .card {
@@ -99,4 +127,23 @@ section.About_me img {
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    background-color: var(--light);
+  }
+
+#snippets img {
+    width: 100%;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+.contact {
+    background-color: var(--light);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+  footer {
+      padding: 20px;
+      background-image: var(--header);
+      text-align: center;
   }
