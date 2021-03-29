@@ -1,5 +1,5 @@
 :root {
-    --header: linear-gradient(#0d048f, #a0acd6);
+    --header: linear-gradient(#0d048f, #5769ad);
     --background:  #acc4d4;
     --light: #a8b4ec;
   }
@@ -31,6 +31,7 @@ header {
     width: 100%;
     top: 0px;
     left: 0px;
+    color: #9ba1af;
 }
 
 header ul {
@@ -70,6 +71,7 @@ header h1 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 10px;
+    color: #9ba1af;
 }
 
 .About_me {
@@ -134,7 +136,7 @@ section.About_me img {
 }
 
 .card {
-    flex: 1 0 250px;
+    /* flex: 1 0 250px; */
     padding: 10px;
     text-align: center;
     border-style: solid;
@@ -143,9 +145,9 @@ section.About_me img {
     background-color: var(--light);
   }
 
-#snippets {
+/* #snippets {
     flex: 2 0 500px;
-}
+} */
 
 #snippets img {
     width: 100%;
